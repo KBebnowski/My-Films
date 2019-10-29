@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mojefilmy.controllers.OptionPaneController">
+   <children>
+      <ToggleButton mnemonicParsing="false" onAction="#ShowMovieList" text="%option.question">
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleBtns" />
+         </toggleGroup>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Question.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton mnemonicParsing="false" onAction="#ShowAddMovie" text="%option.addMovie" toggleGroup="$ToggleBtns">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Movie.png" />
+               </image>
+            </ImageView>
+         </graphic></ToggleButton>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</HBox>
