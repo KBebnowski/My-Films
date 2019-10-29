@@ -16,7 +16,7 @@ public class DbManager {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DbManager.class);
 
-    private static final String JDBC_DRIVER_HD = "jdbc:h2:./libraryDB";
+    private static final String JDBC_DRIVER_HD = "jdbc:h2:./filmsDB";
     private static final String USER = "admin";
     private static final String PASS = "admin";
 
